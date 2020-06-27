@@ -10,6 +10,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Modality;
@@ -26,6 +27,9 @@ public class MainApp extends Application {
 
 		initRootLayout();
 		showPersonaOverview();
+
+		//Colocar el icono
+		this.primaryStage.getIcons().add(new Image("file:resources/images/contacto.png"));
 	}
 	/**
 	 * Inicializa el diseño raíz.
